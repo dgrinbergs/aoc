@@ -47,5 +47,5 @@ func TestDay6(t *testing.T) {
 	assert.Equal(t, 288, solver.Solve("day6/example.txt", day6.Part1Solution))
 	assert.Equal(t, 1195150, solver.Solve("day6/input.txt", day6.Part1Solution))
 	assert.Equal(t, 71503, solver.Solve("day6/example.txt", day6.Part2Solution))
-	assert.Equal(t, -1, solver.Solve("day6/input.txt", day6.Part2Solution))
+	assert.Equal(t, 42550411, solver.Solve("day6/input.txt", day6.Part2Solution))
 }
