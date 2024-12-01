@@ -27,7 +27,7 @@ func Part1Solution(scanner *bufio.Scanner) int {
 	for i := 0; i < len(leftLocations); i++ {
 		gap := leftLocations[i] - rightLocations[i]
 		if gap < 0 {
-			distances += gap * -1
+			distances -= gap
 			continue
 		}
 		distances += gap
