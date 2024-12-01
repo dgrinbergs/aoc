@@ -9,4 +9,5 @@ import (
 
 func TestDay1(t *testing.T) {
 	assert.Equal(t, 3508942, solver.Solve("day1/input.txt", day1.Part1Solution))
+	assert.Equal(t, 26593248, solver.Solve("day1/input.txt", day1.Part2Solution))
 }
