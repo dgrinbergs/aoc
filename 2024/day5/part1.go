@@ -35,6 +35,17 @@ func Part1Solution(scanner *bufio.Scanner) int {
 		}
 	}
 
+	result := 0
+
+	for _, validIndex := range getValidIndexes(numbers, rules) {
+		mp := len(numbers[validIndex]) / 2
+		result += numbers[validIndex][mp]
+	}
+
+	return result
+}
+
+func getValidIndexes(numbers [][]int, rules map[int][]int) []int {
 	validIndexes := make([]int, 0)
 
 groupLoop:
@@ -60,12 +71,5 @@ groupLoop:
 		validIndexes = append(validIndexes, i)
 	}
 
-	result := 0
-
-	for _, validIndex := range validIndexes {
-		mp := len(numbers[validIndex]) / 2
-		result += numbers[validIndex][mp]
-	}
-
-	return result
+	return validIndexes
 }
