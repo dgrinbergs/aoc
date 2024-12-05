@@ -7,6 +7,7 @@ import (
 	"github.com/dgrinbergs/aoc/2024/day3"
 	"github.com/dgrinbergs/aoc/2024/day4"
 	"github.com/dgrinbergs/aoc/2024/day5"
+	"github.com/dgrinbergs/aoc/2024/day6"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -41,4 +42,11 @@ func TestDay5(t *testing.T) {
 	assert.Equal(t, 6242, solver.Solve("day5/input.txt", day5.Part1Solution))
 	assert.Equal(t, 123, solver.Solve("day5/example.txt", day5.Part2Solution))
 	assert.Equal(t, 5169, solver.Solve("day5/input.txt", day5.Part2Solution))
+}
+
+func TestDay6(t *testing.T) {
+	assert.Equal(t, -1, solver.Solve("day6/example.txt", day6.Part1Solution))
+	assert.Equal(t, -1, solver.Solve("day6/input.txt", day6.Part1Solution))
+	assert.Equal(t, -1, solver.Solve("day6/example.txt", day6.Part2Solution))
+	assert.Equal(t, -1, solver.Solve("day6/input.txt", day6.Part2Solution))
 }
